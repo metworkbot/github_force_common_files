@@ -36,6 +36,8 @@ git clone "git@github.com:${ORG}/${REPONAME}"
 
 cd "${REPONAME}"
 git checkout -b common_files_force --track "origin/${BRANCH}"
+REPO_TOPICS=$(metwork_topics.py --json "${ORG}" "${REPONAME}")
+export REPO_TOPICS
 cookiecutter --no-input --config-file ~/tmp/force.yaml ~/tmp/resources/cookiecutter
 shopt -s dotglob
 mv ${REPONAME}/* .

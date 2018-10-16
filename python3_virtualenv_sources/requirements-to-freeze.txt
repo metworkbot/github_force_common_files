@@ -1,2 +1,5 @@
 git-pull-request
 -e git+https://github.com/metwork-framework/aiohttp_github_helpers.git#egg=aiohttp_github_helpers
+-e git+https://github.com/metwork-framework/jinja2_getenv_extension.git#egg=jinja2_getenv_extension
+-e git+https://github.com/metwork-framework/jinja2_shell_extension.git#egg=jinja2_shell_extension
+-e git+https://github.com/metwork-framework/jinja2_from_json_extension.git#egg=jinja2_from_json_extension
