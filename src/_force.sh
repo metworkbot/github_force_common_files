@@ -41,9 +41,9 @@ export REPO_TOPICS
 export REPO_HOME="${TMPREPO}/${REPONAME}"
 cookiecutter --no-input --config-file ~/tmp/force.yaml ~/tmp/resources/cookiecutter
 shopt -s dotglob
-mv ${REPONAME}/* .
+mv _${REPONAME}/* .
 shopt -u dotglob
-rm -Rf "${REPONAME}"
+rm -Rf "_${REPONAME}"
 git add --all
 N=$(git diff --cached |wc -l)
 if test "${N}" -gt 0; then
